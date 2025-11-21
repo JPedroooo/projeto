@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== FUNDO ==== */
+.fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.fundo2 video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.fundo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 3s ease; /* zoom suave */
+  
+}
+.fundo video.zoom {
+  transform: scale(3); /* aplica o zoom */
+}
+
+
+/* ==== SEÇÕES ==== */
+.sec1, .sec2 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.sec2 {
+  background: #000;
+  z-index: 1;
+}
+
+/* Título */
+.titulo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: clamp(40px, 14vw, 125px);
+  color: rgb(255, 255, 255);
+  font-family: "Megrim", system-ui;
+}
+
+/* Botão de entrar */
+.botao-entrar {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0);
+  border: 2px solid #ff00d4;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 49px;
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.botao-entrar:hover {
+  background: #000000a6;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Some título e botão */
+.desaparecer {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+
+/* Rodapé */
+footer {
+  width: 100%;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/* Container geral */
+.footer-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagem de cima */
+.footer-cima {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: -1px; /* remove falha entre as imagens */
+  pointer-events: none; /* evita clique */
+}
+
+/* Imagem de baixo */
+.footer-baixo {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* Texto */
+.footer-texto {
+  position: absolute;
+  bottom: 60%;
+  width: 100%;
+  text-align: center;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  color: rgba(35, 0, 236, 0.9);
+  z-index: 2;
+}
+
+
+
+
