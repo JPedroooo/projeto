@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-image: url(../imgs/fundo-saturno.jpg);
+  background-image: url(../imgs/fundo-venus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -13,23 +13,27 @@ body {
   text-align: center;
 }
 
+
+
 .content {
-  background: rgba(0, 0, 0, 0.473);
+  background: rgba(0, 0, 0, 0.658);
   border-radius: 15px;
   padding: 30px;
   width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.527);
+  max-width: 650px;
+  box-shadow: 0 0 15px rgba(255, 145, 0, 0.596);
 }
 
 h1 {
   font-size: 2.5em;
-  color: #ffe9a1;
+  color: #ffcc66;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 1.2em;
-  color: #fff2c2;
+  color: #ffd480;
+  margin-top: 0;
 }
 
 p {
@@ -51,18 +55,22 @@ td {
 
 td:first-child {
   font-weight: bold;
-  color: #ffe9a1;
+  color: #ffcc66;
   width: 40%;
 }
-
 
 a {
   display: inline-block;
   margin-top: 25px;
   padding: 10px 20px;
-  background: #ffe9a1;
+  background: #ffcc66;
   color: black;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background: #e6b800;
 }
